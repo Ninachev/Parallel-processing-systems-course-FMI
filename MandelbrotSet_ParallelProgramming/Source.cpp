@@ -108,7 +108,7 @@ int main()
 	auto end2 = std::chrono::high_resolution_clock::now();
 	auto duration2 = duration_cast<microseconds>(end2 - start2);
 	double time_elapsed2 = double(duration2.count()) / 1000000;
-	/*for (size_t y = 0; y < imgH; y++)
+	for (size_t y = 0; y < imgH; y++)
 	{
 		for (size_t x = 0; x < imgW; x++)
 		{
@@ -119,7 +119,7 @@ int main()
 			fout << r << " " << g << " " << b << " ";
 		}
 		fout << endl;
-	}*/
+	}
 	auto end = std::chrono::high_resolution_clock::now();
 	auto duration = duration_cast<microseconds>(end - start);
 	double time_elapsed = double(duration.count()) / 1000000;
